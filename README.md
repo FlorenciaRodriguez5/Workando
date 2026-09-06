@@ -36,3 +36,7 @@ Estado del proyecto
 Este proyecto se encuentra actualmente en etapa de desarrollo y se irán incorporando nuevas funcionalidades y mejoras progresivamente.
 
 <h1 clase= "title">
+
+# Workando
+
+Proyecto frontend multipágina (HTML, CSS, JS) con una interfaz dinámica y estilo retro-moderno, creado para alojar herramientas y experiencias sobre el trabajo remoto.
