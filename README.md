@@ -1,42 +1,51 @@
-Mamalicha — Sitio web
-Descripción
+# Workando — Sitio web
 
-Este proyecto consiste en el desarrollo de un sitio web frontend inspirado en un emprendimiento familiar dedicado a la venta de accesorios y productos confeccionados en tela.
+## Descripción
 
-La idea principal es crear un espacio digital donde se pueda exhibir el stock disponible, presentar los diferentes productos y, al mismo tiempo, contar la historia detrás del emprendimiento.
+**Workando** es un proyecto web frontend multipágina enfocado en la creación de recursos, guías y herramientas para freelancers y trabajadores remotos.
 
-El sitio busca combinar una presentación visual atractiva con una navegación sencilla e intuitiva, permitiendo que los usuarios conozcan los productos y se acerquen a la identidad de la marca.
+El sitio cuenta con una interfaz dinámica y un estilo visual retro-moderno, diseñado para ofrecer una navegación intuitiva, accesible y ordenada. Su propuesta incluye un centro de recursos, entradas de blog, herramientas de productividad y una sección de ebooks orientada a la adquisición de material especializado.
 
-Objetivos:
-Crear una interfaz web moderna y fácil de navegar.
-Exhibir los productos disponibles de forma clara y organizada.
-Incorporar una sección dedicada a la historia del emprendimiento.
-Representar visualmente la identidad y esencia de la marca.
+---
 
-Secciones principales:
-El sitio contará con las siguientes secciones:
+## Objetivos
 
-Inicio: presentación de la marca y acceso a las diferentes partes del sitio.
-Productos: catálogo con los productos y accesorios disponibles.
-Nuestra historia: sección destinada a contar cómo surgió el emprendimiento y su recorrido.
-Contacto: información y/o medios para comunicarse con la marca incluyendo los links a las redes sociales.
+- Desarrollar una interfaz web moderna, limpia y altamente estructurada utilizando buenas prácticas de HTML semántico.
+- Ofrecer un espacio accesible para la consulta de guías, artículos de blog y recursos de utilidad profesional.
+- Integrar un catálogo de ebooks con opciones de visualización y adquisición de contenido.
+- Garantizar una experiencia de usuario fluida mediante una arquitectura clara entre sus diferentes páginas.
 
-Tecnologías; (segun lo visto en clase)
-Las tecnologías utilizadas en el desarrollo del proyecto son;
-HTML
-CSS
-JavaScript
+---
 
-Las tecnologías y funcionalidades se irán actualizando a medida que avance el desarrollo del proyecto.
+## Secciones Principales
 
-Estado del proyecto
+El sitio está estructurado en las siguientes vistas y apartados:
 
-🚧 En desarrollo
+- **Inicio:** Presentación de la plataforma, accesos directos destacados y bienvenida general.
+- **Nosotros:** Espacio dedicado a contar la identidad, misión y propósito del proyecto.
+- **Recursos:** Centro operativo con herramientas, guías y materiales de apoyo.
+- **Blog:** Entradas y artículos periódicos con consejos, reflexiones y novedades sobre el trabajo remoto.
+- **Ebooks:** Sección especializada donde se pueden explorar y adquirir los libros digitales disponibles.
+- **Contacto / Footer:** Canales de comunicación, redes sociales y enlaces de navegación secundaria.
 
-Este proyecto se encuentra actualmente en etapa de desarrollo y se irán incorporando nuevas funcionalidades y mejoras progresivamente.
+---
 
-<h1 clase= "title">
+## Tecnologías Utilizadas
 
-# Workando
+El desarrollo del proyecto se apoya en las siguientes tecnologías base:
 
-Proyecto frontend multipágina (HTML, CSS, JS) con una interfaz dinámica y estilo retro-moderno, creado para alojar herramientas y experiencias sobre el trabajo remoto.
+- **HTML5:** Estructuración semántica del contenido (con uso de etiquetas como `<main>`, `<section>`, `<article>`, `<nav>`).
+- **CSS3:** Estilos visuales, diseño adaptativo y maquetación (próxima integración de maquetación avanzada con Flexbox/Grid).
+- **JavaScript:** Funcionalidades dinámicas e interactividad del sitio.
+- **Font Awesome:** Iconografía implementada vía CDN.
+- **Control de versiones:** Git y GitHub.
+
+_Nota: Las tecnologías y funcionalidades se irán actualizando a medida que avance el desarrollo del proyecto._
+
+---
+
+## Estado del proyecto
+
+🚧 **En desarrollo**
+
+El proyecto se encuentra actualmente en su etapa de estructuración de maquetación HTML, preparando la transición hacia la capa de estilos CSS y la lógica en JavaScript.
