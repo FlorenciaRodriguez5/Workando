@@ -1,0 +1,512 @@
+/* =================================================
+   1. ESTILOS GENERALES Y VARIABLES (RESET)
+   ================================================ */
+/* Tipografias, colores base, margenes globales y box-sizing */
+:root {
+  --green: #005232;
+  --green-light: #176a5a;
+  --orange: #fa6e28;
+  --cream: #fffdf9;
+  --beige: #f5eee6;
+  --card: #efe9e2;
+  --white: #ffffff;
+  --text-light: #c8c9ca;
+  --text-muted: #888888;
+  --serif: "DM Serif Display", serif;
+  --sans: "Josefin Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* =================================================
+   2. HEADER Y NAVEGACION (NAVBAR)
+   ================================================ */
+/* Fondo turquesa oscuro, logo, enlaces del menu y boton */
+header {
+  background-color: var(--green);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem clamp(1.5rem, 5vw, 4rem);
+}
+
+.logo img {
+  width: 5rem;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.nav-links a {
+  color: #e5e6e7;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+nav a.active,
+.btn-login {
+  background-color: var(--orange);
+  color: #e5e6e7;
+}
+
+nav a.active {
+  padding: 0.625rem 1rem;
+  border-radius: 20%;
+}
+
+.btn-login {
+  padding: 0.5rem 1.2rem;
+  border-radius: 3rem;
+  font-weight: 700;
+}
+
+/* ================================================
+   3. SECCION HERO / BIENVENIDA
+   ================================================ */
+/* Titulo principal, descripcion, boton de llamado a la accion e imagen */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(2rem, 6vw, 6rem);
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 3rem clamp(1.5rem, 5vw, 4rem) 4rem;
+}
+
+.text-container {
+  max-width: 34rem;
+}
+
+.text-container h1 {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.text-container p {
+  max-width: 30rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.resaltado {
+  color: var(--orange);
+  font-family: var(--serif);
+  font-style: italic;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  background-color: var(--orange);
+  color: var(--white);
+  font: 600 0.8rem var(--sans);
+}
+
+.img-container img {
+  display: block;
+  width: min(100%, 22rem);
+  border: 1px solid var(--orange);
+  border-radius: 1.5rem;
+}
+
+/* =================================================
+   4. SECCION DE TARJETAS (CARDS)
+   ================================================ */
+/* Contenedor general, diseno de las tarjetas, categorias y efectos */
+main {
+  background: none;
+}
+
+.benefits-section {
+  padding: 4rem 0 3rem;
+  background-color: var(--cream);
+}
+
+.whyus-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 auto 2.5rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.whyus-container h2,
+.card h3 {
+  color: #000000;
+  font-family: var(--serif);
+  font-weight: 400;
+}
+
+.whyus-container h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+}
+
+.whyus-container span {
+  color: var(--orange);
+}
+
+.whyus-container p {
+  max-width: 32rem;
+  color: var(--text-muted);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 13rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--card);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-0.4rem);
+}
+
+.card a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0.65rem;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+}
+
+.card p {
+  color: var(--text-muted);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 350;
+  line-height: 1.4;
+}
+
+.opinion-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(2rem, 7vw, 6rem);
+  margin: 0;
+  padding: 4.5rem clamp(1.5rem, 8vw, 8rem);
+  background-color: var(--beige);
+}
+
+.opinion-container img {
+  width: clamp(13rem, 24vw, 18rem);
+  height: clamp(13rem, 24vw, 18rem);
+  border: 2px solid var(--orange);
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  max-width: 35rem;
+}
+
+.review::before {
+  margin-bottom: 1rem;
+  color: var(--orange);
+  content: "\f10d";
+  font-family: "Font Awesome 7 Free";
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.review p {
+  order: 1;
+  color: #000000;
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2.1vw, 2rem);
+  font-style: italic;
+  line-height: 1.25;
+}
+
+.review h3 {
+  order: 2;
+  margin: 1.25rem 0 0.25rem;
+  font: 400 1rem var(--serif);
+}
+
+.review h5 {
+  order: 3;
+  color: #777777;
+  font: 400 0.7rem var(--sans);
+}
+
+/* =================================================
+   5. FOOTER / PIE DE PAGINA
+   ================================================ */
+/* Fondo turquesa oscuro, columnas de navegacion, redes sociales y copyright */
+footer {
+  position: relative;
+  background-color: var(--green);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2.05fr 0.8fr 1.1fr 1.4fr;
+  column-gap: clamp(2rem, 4vw, 6rem);
+  width: 100%;
+  padding: 4rem clamp(2.5rem, 5vw, 7rem);
+}
+
+.footer-info,
+.footer-nav,
+.footer-tools,
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-info {
+  gap: 1.25rem;
+}
+
+.footer-info img {
+  width: 12rem;
+  height: auto;
+}
+
+.footer-info p,
+.footer-newsletter p {
+  color: var(--text-light);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.footer-info p {
+  max-width: 24rem;
+}
+
+.footer-newsletter {
+  gap: 1rem;
+}
+
+.footer-newsletter p {
+  line-height: 1.4;
+}
+
+.footer-nav ul,
+.footer-tools ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.footer-nav h3,
+.footer-tools h3,
+.footer-newsletter h3 {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: start;
+}
+
+.footer-nav a,
+.footer-tools a {
+  color: var(--text-light);
+  font-family: var(--sans);
+  font-weight: 300;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--green-light);
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
+
+.footer-newsletter form {
+  display: flex;
+  width: 100%;
+  max-width: 17rem;
+}
+
+.footer-newsletter input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.65rem 0.9rem;
+  border: 0;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.footer-newsletter button {
+  padding: 0 1rem;
+  border: 0;
+  border-radius: 0 1.5rem 1.5rem 0;
+  background-color: var(--orange);
+  color: var(--text-light);
+  cursor: pointer;
+  font: 300 0.9rem var(--sans);
+}
+
+/* Franja inferior del footer */
+footer .copywrite {
+  display: block;
+  margin: 0 clamp(2.5rem, 5vw, 7rem);
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-light);
+  font-size: 0.75rem;
+}
+
+footer .terms-container {
+  position: absolute;
+  right: clamp(2.5rem, 5vw, 7rem);
+  bottom: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.5rem;
+}
+
+footer .terms-container a {
+  color: var(--text-light);
+  font-size: 0.75rem;
+}
+
+footer .terms-container a:hover {
+  color: var(--white);
+}
+
+/* =================================================
+   6. DISENO RESPONSIVE
+   ================================================ */
+@media (max-width: 48rem) {
+  header nav,
+  .container,
+  .opinion-container {
+    flex-direction: column;
+  }
+
+  header nav,
+  .opinion-container {
+    align-items: flex-start;
+  }
+
+  header nav {
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .text-container,
+  .text-container p {
+    max-width: 100%;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 38rem) {
+  .footer-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 2.5rem;
+  }
+}
+
+@media (max-width: 34rem) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+  }
+
+  footer .copywrite {
+    margin: 0 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  footer .terms-container {
+    position: static;
+    justify-content: flex-end;
+    padding: 0 1.5rem 2rem;
+  }
+}

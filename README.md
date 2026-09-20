@@ -42,8 +42,42 @@ El desarrollo del proyecto se apoya en las siguientes tecnologÃ­as base:
 
 _Nota: Las tecnologÃ­as y funcionalidades se irÃ¡n actualizando a medida que avance el desarrollo del proyecto._
 
----
+## Sistema visual
 
+### Tipografías
+
+- **DM Serif Display:** títulos, encabezados y citas destacadas.
+- **Outfit:** tipografía de texto definida para la identidad visual del proyecto.
+- **Josefin Sans:** tipografía cargada actualmente para textos, enlaces, botones y contenido auxiliar.
+- **Quintessential:** utilizada en citas o testimonios destacados.
+- **Font Awesome:** iconografía de redes sociales, botones y recursos.
+- **Gill Sans, Gill Sans MT, Calibri y Trebuchet MS:** fuentes de respaldo usadas en el footer.
+
+### Paleta de colores Workando
+
+| Color | Código | Uso |
+| --- | --- | --- |
+| Turquesa oscuro | `#005232` | Color principal de header y footer. |
+| Amarillo claro | `#FFF7BF` | Color definido en la paleta de marca. |
+| Naranja vivido | `#FA6E28` | Botones, acentos e íconos destacados. |
+| Crema / hueso claro | `#F9F6F0` | Color definido para fondos claros. |
+| Beige / arena sutil | `#EFE9E2` | Fondo de cards y superficies secundarias. |
+| Blanco suave | `#C8C9CA` | Texto claro sobre fondos oscuros. |
+
+#### Colores complementarios presentes en los archivos
+
+| Color | Código | Uso actual |
+| --- | --- | --- |
+| Verde secundario | `#176A5A` | Fondo de los íconos sociales del footer. |
+| Crema implementado | `#FFFDF9` | Fondo de la sección de beneficios. |
+| Beige implementado | `#F5EEE6` | Fondo de la sección de testimonio. |
+| Blanco puro | `#FFFFFF` | Texto e íconos sobre fondos oscuros. |
+| Gris claro | `#E5E6E7` | Enlaces y botones de navegación. |
+| Gris medio | `#888888` | Texto secundario. |
+| Gris testimonial | `#777777` | Información auxiliar del testimonio. |
+| Negro | `#000000` | Títulos y citas principales. |
+
+---
 ## Estado del proyecto
 
 ðŸš§ **En desarrollo**

@@ -1,10 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- VINCULO A FONT AWESOME - LOGOS/ICONOS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" rel="stylesheet" />  
-  
+    <!-- VINCULO FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quintessential&display=swap" rel="stylesheet">
+
+<!-- SHEET DE ESTILOS -->
+    <link rel="stylesheet" href="/Proyecto/Estilos/style.css">
     <title>Workando</title>
   </head>
 
@@ -14,29 +21,31 @@
 
   <body>
     <header>
-      <img
-        src="Recursos multimedia/Logo 1.png"
-        alt="Logotipo de Workando."
-        width="100px"
-        height="100px"
-      />
+     
       <nav>
+        <div class="logo">  
+         <a href="index.html">  <img
+         src="Recursos multimedia/Logo 1.png"
+         alt="Logotipo de Workando."
+         width="100px"
+         height="100px"
+           />
+          </a>
+       </div>
         <!-- Menu de navegación -->
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Inicio</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="recursos.html">Recursos</a></li>
-          <li><a href="blogs.html">Blogs</a></li>
-          <li><a href="e-books.html">E-books</a></li>
+          <li><a href="blogs.html" >Blogs</a></li>
+          <li><a href="e-books.html" >E-books</a></li>
+           <li><a href="iniciar-sesion.html" class="btn-login">Iniciar sesión</a></li>
         </ul>
       </nav>
-      <!-- Ideal para boton de dark mode -->
-      <button>Iniciar sesión</button>
-    </header>
-    <main>
-      <!-- Contenido principal Div de texto + imagen representativa a un costado -->
-      <div>
-        <h1 class="title">Trabaja a tu ritmo, conecta con tu vibra.</h1>
+       <!-- Contenido principal Div de texto + imagen representativa a un costado -->
+      <section class="container">
+        <div class="text-container">
+        <h1 class="title">Trabaja a tu ritmo, <span class="resaltado">conecta</span> con tu vibra.</h1>
         <p>
           Workando combina el profesionalismo de la era digital con la filosofia
           libre y empaca de los nuevos tiempos. Con Workando, puedes trabajar
@@ -46,27 +55,31 @@
           cómo y cuándo trabajar. Recursos, herramientas y más para freelancers
           modernos.
         </p>
+      <a href="recursos.html" class="hero-cta">Explorar recursos <i class="fa-solid fa-arrow-right"></i></a>
       </div>
 
-      <div>
+      <div class="img-container">
         <img
           src="Recursos multimedia/img.jpeg"
           alt="Imagen representativa de Workando."
         />
       </div>
-    
-
-     <section>
+      </section>
+    </header>
+    <main>
+      <section class="benefits-section">
+        <section class="whyus-container">
       <!-- Pequeña intro a los que hay en la comunidad -->
-      <h2>¿Por qué Workando?</h2>
+      <h2>¿Por qué  <span >Workando?</span></h2>
       <p>
           Creamos puentes de conocimiento entre tu vida laboral y tu paz mental.
         Todo lo necesario para florecer en tu carrera autónoma.
       </p>
      </section>
-     <div>
+     <div class="cards-container">
         <!--Tarjetas , van en un div todas y despues un div para cada una? preguntar-->
-        <div>
+        <div class="card">
+          <a><i class="fa-solid fa-file-arrow-down"></i></a>
           <h3>Recursos Prácticos</h3>
           <p>
             Plantillas listas para usar, descargables directos y guías de
@@ -74,7 +87,8 @@
           </p>
         </div>
 
-        <div>
+        <div class="card">
+          <a><i class="fa-regular fa-heart"></i></a>
           <h3>Filosofia Consciente</h3>
           <p>
             No todo es producir. Abogamos por un balance real donde el descanso
@@ -82,7 +96,8 @@
           </p>
         </div>
 
-        <div>
+        <div class="card">
+          <a><i class="fa-solid fa-book-open-reader"></i></a>
           <h3>E-books de Autor</h3>
           <p>
             Plantillas listas para usar, descargables directos y guías de
@@ -90,19 +105,18 @@
           </p>
         </div>
       </div>
-     </section>
+      </section>
       <!-- OPINIONES Y RESEÑAS-->
-     <section>
-       <div>
+     <section class="opinion-container">
           <img
            src="Recursos multimedia/img1.jpeg"
            alt="Imagen representativa Sofia Valenzuela."
            width="auto"
            height="auto"
           />
-       </div>
+       <div class="review">
+         <h5> Diseñadora UX & Product Owner</h5>
 
-       <div>
          <h3>Sofía Valenzuela</h3>
          <p>
            "Workando me ha permitido encontrar proyectos que se alinean con mis
@@ -117,69 +131,75 @@
    
     
     <footer>
-      <section class="footer-info">
-        <!-- PArte de abajo co divs? o tablas?  -->
-        <img
-          src="Recursos multimedia/Banner.png"
-          alt="Banner de Workando."
-          width="auto"
-          height="auto"
-        />
-        <p>
-          Workando es una plataforma que conecta a freelancers con proyectos que
-          se alinean con sus intereses y habilidades, brindándoles la libertad
-          de elegir cómo y cuándo trabajar.
-        </p>
-      </section>
+      <div class="footer-container">
+       <!-- BANNER + TEXTO + LOGO SM --->
+         <section class="footer-info">
+            <!-- Banner de Workando -->
+            <img
+            src="Recursos multimedia/Banner.png"
+            alt="Banner de Workando."
+            width="auto"
+            height="auto"
+            />
+            <!-- Texto de Workando DEL BANNER -->
+           <p>
+             Workando es una plataforma que conecta a freelancers con proyectos que
+             se alinean con sus intereses y habilidades, brindándoles la libertad
+             de elegir cómo y cuándo trabajar.
+           </p>
+            <!-- Logos de Workando SM -->
+           <div class="footer-social">
+             <a href="https://www.instagram.com/workando.ok/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+             <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+             <a href="mailto:workando.ok@gmail.com" aria-label="Enviar un correo" target="_blank" rel="noopener noreferrer"> <i class="fa-solid fa-envelope"></i></a>
+             <a href="https://open.spotify.com/show/6uIGN2rFYeeiDExMjiQMt4" aria-label="Podcast de Spotify " target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-spotify"></i></a>
+           
+            </div> 
+         </section>
+ 
+          <!-- NAVEGACION DEL FOOTER -->
+         <nav class="footer-nav">
+            <h3>Navegación</h3>
+           <ul>
+             <li><a href="index.html">Inicio</a></li>
+             <li><a href="nosotros.html">Nosotros</a></li>
+             <li><a href="recursos.html">Recursos</a></li>
+             <li><a href="blogs.html">Blogs</a></li>
+             <li><a href="e-books.html">E-books</a></li>
+           </ul>
+         </nav>
 
-      <section class="footer-social">
-        <a href="https://www.instagram.com/workando.ok/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:workando.ok@gmail.com" aria-label="Enviar un correo" target="_blank" rel="noopener noreferrer"> <i class="fa-solid fa-envelope"></i></a>
-        <a href="https://open.spotify.com/show/6uIGN2rFYeeiDExMjiQMt4" aria-label="Podcast de Spotify " target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-spotify"></i></a>
-          
+       <!-- RECURSOS-TOOLS DEL FOOTER -->
+        <nav class="footer-tools"> 
+          <h3>Herramientas</h3>
+          <ul>
+            <li><a href="https://jamesclear.com/productivity" target="_blank" rel="noopener noreferrer">Guias de productividad</a></li>
+            <li><a href="https://www.notion.com/es/explore-templates" target="_blank" rel="noopener noreferrer">Plantillas de Notion</a></li>
+            <li><a href="https://www.payoneer.com/es/resources/tools/freelance-hourly-rate-calculator/" target="_blank" rel="noopener noreferrer">Calculadora Freelance</a></li>
+            <li><a href="https://slack.com/intl/es-ar" target="_blank" rel="noopener noreferrer">Comunidad Slack</a></li>
+            <li><a href="https://discord.com/" target="_blank" rel="noopener noreferrer">Comunidad de Discord</a></li>
+          </ul>
+        </nav>
 
-      </section>
-
-
-
-      <h3>Navegación</h3>
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="recursos.html">Recursos</a></li>
-          <li><a href="blogs.html">Blogs</a></li>
-          <li><a href="e-books.html">E-books</a></li>
-        </ul>
-      </nav>
-
-      <h3>Herramientas</h3>
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="https://jamesclear.com/productivity" target="_blank" rel="noopener noreferrer">Guias de productividad</a></li>
-          <li><a href="https://www.notion.com/es/explore-templates" target="_blank" rel="noopener noreferrer">Plantillas de Notion</a></li>
-          <li><a href="https://www.payoneer.com/es/resources/tools/freelance-hourly-rate-calculator/" target="_blank" rel="noopener noreferrer">Calculadora Freelance</a></li>
-          <li><a href="https://slack.com/intl/es-ar" target="_blank" rel="noopener noreferrer">Comunidad Slack</a></li>
-          <li><a href="https://discord.com/" target="_blank" rel="noopener noreferrer">Comunidad de Discord</a></li>
-        </ul>
-      </nav>
-
-      <h3>Unite a la vibra</h3>
-      <section class="footer-nav">
-        <p>Recibí semanalmente consejos sobre estilo de vida, trabajo remoto y bienestar profesional.</p>
-        <form action="">
-          <input type="email" placeholder="jane@correo.com" />
-          <button type="submit">Suscribirme</button>  
-        
-      </section>
       
-
-
-      <p>&copy; 2026 Workando. Hecho con amor, mate y buenas vibras.</p>
-      <a href="#">Política de privacidad</a> 
-      <a href="#">Términos y condiciones</a>
+        <section class="footer-newsletter">
+          <h3>Unite a la vibra</h3>
+          <p>Recibí semanalmente consejos únicos <br>
+             sobre estilo de vida, trabajo remoto y <br>
+             bienestar profesional.</p>
+          <form action="">
+            <input type="email" placeholder="persona@correo.com" />
+            <button type="submit">Suscribirme</button>  
+          </form>
+        </section>
       
+   </div>   <!-- DIV DE CIERRE DE CLASS=FOOTER-CONTAINER -->
+
+      <p class="copywrite">&copy; 2026 Workando. Hecho con amor, mate y buenas vibras.</p>
+      <div class="terms-container">
+        <a href="#">Política de privacidad</a> 
+        <a href="#">Términos y condiciones</a>
+      </div>
     </footer>
   </body>
 </html>
