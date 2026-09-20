@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" rel="stylesheet" />  
     <title>Workando</title>
   </head>
@@ -116,7 +117,9 @@
     </section>
 
     <footer>
-      <section class="footer-info">
+      <div class="footer-columns">
+        <section class="footer-column">
+          <div class="footer-info">
         <!-- PArte de abajo co divs? o tablas?  -->
         <img
           src="Recursos multimedia/Banner.png"
@@ -129,21 +132,23 @@
           se alinean con sus intereses y habilidades, brindándoles la libertad
           de elegir cómo y cuándo trabajar.
         </p>
-      </section>
+          </div>
 
-      <section class="footer-social">
+          <section class="footer-social">
         <a href="https://www.instagram.com/workando.ok/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
         <a href="mailto:workando.ok@gmail.com" aria-label="Enviar un correo" target="_blank" rel="noopener noreferrer"> <i class="fa-solid fa-envelope"></i></a>
         <a href="https://open.spotify.com/show/6uIGN2rFYeeiDExMjiQMt4" aria-label="Podcast de Spotify " target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-spotify"></i></a>
           
 
-      </section>
+          </section>
+        </section>
 
 
 
-      <h3>Navegación</h3>
-      <nav class="footer-nav">
+        <section class="footer-column">
+          <h3>Navegación</h3>
+          <nav class="footer-nav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
@@ -151,10 +156,12 @@
           <li><a href="blogs.html">Blogs</a></li>
           <li><a href="e-books.html">E-books</a></li>
         </ul>
-      </nav>
+          </nav>
+        </section>
 
-      <h3>Herramientas</h3>
-      <nav class="footer-nav">
+        <section class="footer-column">
+          <h3>Herramientas</h3>
+          <nav class="footer-nav">
         <ul>
           <li><a href="https://jamesclear.com/productivity" target="_blank" rel="noopener noreferrer">Guias de productividad</a></li>
           <li><a href="https://www.notion.com/es/explore-templates" target="_blank" rel="noopener noreferrer">Plantillas de Notion</a></li>
@@ -162,23 +169,26 @@
           <li><a href="https://slack.com/intl/es-ar" target="_blank" rel="noopener noreferrer">Comunidad Slack</a></li>
           <li><a href="https://discord.com/" target="_blank" rel="noopener noreferrer">Comunidad de Discord</a></li>
         </ul>
-      </nav>
+          </nav>
+        </section>
 
-      <h3>Unite a la vibra</h3>
-      <section class="footer-nav">
+        <section class="footer-column">
+          <h3>Unite a la vibra</h3>
+          <section class="footer-nav">
         <p>Recibí semanalmente consejos sobre estilo de vida, trabajo remoto y bienestar profesional.</p>
         <form action="">
           <input type="email" placeholder="jane@correo.com" />
-          <button type="submit">Suscribirme</button>  
-        
-      </section>
-      
+              <button type="submit">Suscribirme</button>
+            </form>
+          </section>
+        </section>
+      </div>
 
-
-      <p>&copy; 2026 Workando. Hecho con amor, mate y buenas vibras.</p>
-      <a href="#">Política de privacidad</a> 
-      <a href="#">Términos y condiciones</a>
-      
+      <div class="footer-legal">
+        <p>&copy; 2026 Workando. Hecho con amor, mate y buenas vibras.</p>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos y condiciones</a>
+      </div>
     </footer>
   </body>
 </html>
