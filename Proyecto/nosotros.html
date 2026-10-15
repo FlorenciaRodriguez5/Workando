@@ -1,179 +1,224 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" rel="stylesheet" />  
-    <title>Workando</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Estilos/style.css" />
+    <title>Workando | Nosotros</title>
   </head>
   <body>
-    <header>
-      <img
-        src="Recursos multimedia/Logo 1.png"
-        alt="Logotipo de Workando."
-        width="100px"
-        height="100px"
-      />
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="recursos.html">Recursos</a></li>
-          <li><a href="blogs.html">Blogs</a></li>
-          <li><a href="e-books.html">E-books</a></li>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Menú principal">
+        <a class="logo" href="index.html">
+          <img src="Recursos multimedia/Logo 1.png" alt="Workando" />
+        </a>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="active" aria-current="page" href="nosotros.html">Nosotros</a>
+          </li>
+          <li>
+            <a href="recursos.html">Recursos</a>
+          </li>
+          <li>
+            <a href="blogs.html">Blogs</a>
+          </li>
+          <li>
+            <a href="e-books.html">E-books</a>
+          </li>
+          <li>
+            <a class="newsletter-link" href="#footer-newsletter">Newsletter</a>
+          </li>
         </ul>
       </nav>
-
-      <button>Iniciar sesión</button>
     </header>
     <main>
-      <h1>Creemos en un mañana más libre, silvestre y balanceado.</h1>
-
-      <img
-        src="Recursos multimedia/img3.jpeg"
-        alt="Imagen representativa de Workando." />
-
-      <p>
-       Workando nació en una tarde soleada de otoño, bajo la premisa de que el trabajo no debería ser una prisión de metal y concreto, sino una extensión de nuestras pasiones.
-      </p>
-
-      <p>Somos un equipo de diseñadores, escritores y aventureros digitales que decidimos dar un paso atrás de la productividad tóxica (“hustle culture”) para reconectarnos con lo esencial: el bienestar mental, el arte de ralentizar el ritmo y la libertad de crear con autenticidad. </p>
-
-      <h2>Los Rostros detrás de Workando</h2>
-    <section class="container-cards">
-      <article class="card-us">
+      <!-- Historia de marca. -->
+      <section class="about-hero page-width">
+        <div>
+          <p class="eyebrow">Una mirada distinta</p>
+          <h1>
+            Creemos en un mañana más libre,
+            <span class="accent">silvestre</span> y balanceado.
+          </h1>
+          <p>
+            Workando nació en una tarde soleada de otoño, con una idea simple:
+            el trabajo no debería sentirse como una prisión de metal y concreto,
+            sino como una extensión de nuestras pasiones.
+          </p>
+          <p>
+            Somos diseñadores, escritores y aventureros digitales que elegimos
+            alejarnos de la productividad tóxica para reconectar con el
+            bienestar, la pausa y la libertad de crear con autenticidad.
+          </p>
+        </div>
         <img
-          src="Recursos multimedia/Elena.jpeg"
-          alt="Imagen representativa del CEO de Workando."
+          src="Recursos multimedia/img3.jpeg"
+          alt="Equipo de Workando al aire libre"
         />
-        <h3>Elena G.</h3>
-        <h4>CEO & Directora Creativa</h4>
-        <p>
-          Especialista en estructuración freelance con más de 8 años viviendo de forma nómada. Amante del café de filtro y el yoga matutino.      
-       </p>
-      </article>
-
-      <article class="card-us">
-        <img
-          src="Recursos multimedia/Milena.jpeg"
-          alt="Imagen representativa de la directora editorial de Workando."
-        />
-        <h3>Milena F.</h3>
-
-        <h4>Directora Editorial</h4>
-
-        <p> Periodista de viajes y defensora del slow work. Escribe todas nuestras guías    
-          con el propósito de devolver el alma al quehacer profesional. 
-       </p>
-      </article>
-      
-    </section>
-
-     <section class="container-cards">
-       <h2>Nuesto Viaje hasta Hoy</h2>
-       <p> En recuento de los hitos que definen nuestra evolucion y espíritu comunitario.</p>
-
-       <article class="card-years">
-         <h3> 2023</h3>
-         <h4>La chispa</h4>
-         <p>
-           Nace como un simple newspaper con consejos semanales para  diseñadores y redactores.
-         </p>
-      </article>
-
-       <article class="card-years">
-        <h3> 2024</h3>
-        <h4> Comunidad 1K</h4>
-
-        <p> ALcanzamos los primeros mil suscriptores y lanzamos nuestra primera plantilla de Notion
-       </p>
-      </article>
-
-      <article class="card-years">
-        <h3> 2025</h3>
-        <h4> Lanzamiento E-books</h4>
-
-        <p> Establecemos la tienda editorial con guia enfocadas en finanzas, cleints y slow life.
-       </p>
-      </article>
-
-      <article class="card-years">
-        <h3> 2026</h3>
-        <h4> Vibra Workando</h4>
-
-        <p> Evolucionamos hacia un hub digital de referencia para toda Hispanoamerica.
-       </p>
-      </article>
-     </section>
-
+      </section>
+      <!-- Equipo -->
+      <section class="about-section alt">
+        <div class="page-width">
+          <h2 class="section-heading">
+            Los rostros detrás de <span>Workando</span>
+          </h2>
+          <div class="team-grid">
+            <article class="team-card">
+              <img
+                src="Recursos multimedia/Elena.jpeg"
+                alt="Elena, directora creativa"
+              />
+              <div>
+                <h3>Elena G.</h3>
+                <h4>CEO &amp; Directora creativa</h4>
+                <p>
+                  Especialista en trabajo freelance y amante del café de filtro,
+                  el yoga y las ideas que respetan el ritmo propio.
+                </p>
+              </div>
+            </article>
+            <article class="team-card">
+              <img
+                src="Recursos multimedia/Milena.jpeg"
+                alt="Milena, directora editorial"
+              />
+              <div>
+                <h3>Milena F.</h3>
+                <h4>Directora editorial</h4>
+                <p>
+                  Periodista de viajes y defensora del slow work. Escribe para
+                  devolver alma al quehacer profesional.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="journey page-width">
+          <h2 class="section-heading">Nuestro viaje hasta hoy</h2>
+          <p>Hitos que definen nuestra evolución y espíritu comunitario.</p>
+          <div class="year-grid">
+            <article class="year-card">
+              <h3>2023</h3>
+              <h4>La chispa</h4>
+              <p>
+                Nacimos como un newsletter con consejos semanales para
+                creativos.
+              </p>
+            </article>
+            <article class="year-card">
+              <h3>2024</h3>
+              <h4>Comunidad 1K</h4>
+              <p>
+                Alcanzamos los primeros mil suscriptores y lanzamos nuestra
+                plantilla de Notion.
+              </p>
+            </article>
+            <article class="year-card">
+              <h3>2025</h3>
+              <h4>Lanzamiento e-books</h4>
+              <p>Abrimos la tienda editorial de guías para freelancers.</p>
+            </article>
+            <article class="year-card">
+              <h3>2026</h3>
+              <h4>Vibra Workando</h4>
+              <p>Nos convertimos en un hub digital para toda Hispanoamérica.</p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
-    
-    
-   
-   <footer>
-      <section class="footer-info">
-        <!-- PArte de abajo co divs? o tablas?  -->
-        <img
-          src="Recursos multimedia/Banner.png"
-          alt="Banner de Workando."
-          width="auto"
-          height="auto"
-        />
-        <p>
-          Workando es una plataforma que conecta a freelancers con proyectos que
-          se alinean con sus intereses y habilidades, brindándoles la libertad
-          de elegir cómo y cuándo trabajar.
-        </p>
-      </section>
-
-      <section class="footer-social">
-        <a href="https://www.instagram.com/workando.ok/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:workando.ok@gmail.com" aria-label="Enviar un correo" target="_blank" rel="noopener noreferrer"> <i class="fa-solid fa-envelope"></i></a>
-        <a href="https://open.spotify.com/show/6uIGN2rFYeeiDExMjiQMt4" aria-label="Podcast de Spotify " target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-spotify"></i></a>
-          
-
-      </section>
-
-
-
-      <h3>Navegación</h3>
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html" class="active">Nosotros</a></li>
-          <li><a href="recursos.html">Recursos</a></li>
-          <li><a href="blogs.html">Blogs</a></li>
-          <li><a href="e-books.html">E-books</a></li>
-        </ul>
-      </nav>
-
-      <h3>Herramientas</h3>
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="https://jamesclear.com/productivity" target="_blank" rel="noopener noreferrer">Guias de productividad</a></li>
-          <li><a href="https://www.notion.com/es/explore-templates" target="_blank" rel="noopener noreferrer">Plantillas de Notion</a></li>
-          <li><a href="https://www.payoneer.com/es/resources/tools/freelance-hourly-rate-calculator/" target="_blank" rel="noopener noreferrer">Calculadora Freelance</a></li>
-          <li><a href="https://slack.com/intl/es-ar" target="_blank" rel="noopener noreferrer">Comunidad Slack</a></li>
-          <li><a href="https://discord.com/" target="_blank" rel="noopener noreferrer">Comunidad de Discord</a></li>
-        </ul>
-      </nav>
-
-      <h3>Unite a la vibra</h3>
-      <section class="footer-nav">
-        <p>Recibí semanalmente consejos sobre estilo de vida, trabajo remoto y bienestar profesional.</p>
-        <form action="">
-          <input type="email" placeholder="jane@correo.com" />
-          <button type="submit">Suscribirme</button>  
-        
-      </section>
-      
-
-
-      <p>&copy; 2026 Workando. Hecho con amor, mate y buenas vibras.</p>
-      <a href="#">Política de privacidad</a> 
-      <a href="#">Términos y condiciones</a>
-      
+    <!-- Pie de página -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <section class="footer-info">
+          <img src="Recursos multimedia/Banner.png" alt="Workando" />
+          <p>
+            El espacio donde el trabajo remoto, la creatividad libre y el
+            profesionalismo consciente florecen juntos bajo el sol del
+            crecimiento.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"> </i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"> </i>
+            </a>
+            <a href="mailto:workando.ok@gmail.com" aria-label="Correo">
+              <i class="fa-solid fa-envelope"> </i>
+            </a>
+            <a href="#" aria-label="Correo">
+              <i class="fa-brands fa-spotify"></i>
+            </a>
+          </div>
+        </section>
+        <nav>
+          <h3>Navegación</h3>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="recursos.html">Recursos</a>
+            </li>
+            <li>
+              <a href="blogs.html">Blogs</a>
+            </li>
+            <li>
+              <a href="e-books.html">E-books</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h3>Herramientas</h3>
+          <ul>
+            <li><a href="#">Guías de productividad</a></li>
+            <li><a href="https://www.notion.com/es">Plantillas Notion</a></li>
+            <li>
+              <a
+                href="https://www.payoneer.com/es/resources/tools/freelance-hourly-rate-calculator/"
+                >Calculadora Freelance</a
+              >
+            </li>
+            <li><a href="https://discord.com/"> Comunidad Discord</a></li>
+          </ul>
+        </nav>
+        <section class="footer-newsletter" id="footer-newsletter">
+          <h3>Unite a la vibra</h3>
+          <p>Consejos únicos para tu trabajo y bienestar.</p>
+          <form>
+            <input
+              type="email"
+              aria-label="Correo electrónico"
+              placeholder="persona@correo.com"
+              required
+            />
+            <button>Suscribirme</button>
+          </form>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Workando.</span>
+        <div>
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
